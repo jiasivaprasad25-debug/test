@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Simple Webpage</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        section{
+            border: 1px solid black;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1,h2{
+            color: blue;
+        }
+
+        button{
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Login Form */
+
+        .login input{
+            display: block;
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+
+        /* Navigation Bar */
+
+        nav{
+            background-color: black;
+            padding: 10px;
+        }
+
+        nav a{
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        /* Profile Card */
+
+        .profile{
+            width: 200px;
+            text-align: center;
+            border: 1px solid gray;
+            padding: 10px;
+        }
+
+        .profile img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        /* Product Card */
+
+        .product{
+            width: 200px;
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .product img{
+            width: 100%;
+        }
+
+        /* Two Column Layout */
+
+        .container{
+            display: flex;
+        }
+
+        .box{
+            width: 50%;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        /* Gallery */
+
+        .gallery{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+        }
+
+        .gallery img{
+            width: 100%;
+        }
+
+        /* Dark Background */
+
+        .dark{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .glow{
+            background-color: cyan;
+            color: black;
+            box-shadow: 0px 0px 10px cyan;
+        }
+
+        /* Pricing Cards */
+
+        .pricing{
+            display: flex;
+            gap: 20px;
+        }
+
+        .card{
+            border: 1px solid black;
+            padding: 20px;
+            width: 150px;
+            text-align: center;
+        }
+
+        /* Footer */
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Simple Webpage -->
+
+    <section>
+
+        <h1>Welcome to My Website</h1>
+
+        <p>
+            This is a simple paragraph for the webpage.
+        </p>
+
+        <button onclick="showMessage()">
+            Click Here
+        </button>
+
+    </section>
+
+
+    <!-- Login Form -->
+
+    <section>
+
+        <h2>Login Form</h2>
+
+        <div class="login">
+
+            <input type="text" id="username" placeholder="Username">
+
+            <input type="password" id="password" placeholder="Password">
+
+            <button onclick="login()">
+                Login
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Navigation Bar -->
+
+    <section>
+
+        <h2>Navigation Bar</h2>
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </section>
+
+
+    <!-- Profile Card -->
+
+    <section>
+
+        <h2>Profile Card</h2>
+
+        <div class="profile">
+
+            <img src="https://via.placeholder.com/100">
+
+            <h3>Jiya</h3>
+
+            <p>Frontend Developer</p>
+
+            <button onclick="followUser()">
+                Follow
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Product Card -->
+
+    <section>
+
+        <h2>Product Details</h2>
+
+        <div class="product">
+
+            <img src="https://via.placeholder.com/200x100">
+
+            <h3>Watch</h3>
+
+            <p>Price: ₹2000</p>
+
+            <button onclick="buyProduct()">
+                Buy Now
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Two Column Layout -->
+
+    <section>
+
+        <h2>Two Column Layout</h2>
+
+        <div class="container">
+
+            <div class="box">
+
+                <h3>Left Side</h3>
+
+                <p>Content for left side.</p>
+
+            </div>
+
+            <div class="box">
+
+                <h3>Right Side</h3>
+
+                <p>Content for right side.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Gallery -->
+
+    <section>
+
+        <h2>Image Gallery</h2>
+
+        <div class="gallery">
+
+            <img src="https://via.placeholder.com/200">
+
+            <img src="https://via.placeholder.com/200">
+
+            <img src="https://via.placeholder.com/200">
+
+            <img src="https://via.placeholder.com/200">
+
+        </div>
+
+    </section>
+
+
+    <!-- Dark Background -->
+
+    <section class="dark">
+
+        <h2>Dark Theme Section</h2>
+
+        <p>This section has dark background.</p>
+
+        <button class="glow" onclick="glowMessage()">
+            Glow Button
+        </button>
+
+    </section>
+
+
+    <!-- Pricing Cards -->
+
+    <section>
+
+        <h2>Pricing Plans</h2>
+
+        <div class="pricing">
+
+            <div class="card">
+
+                <h3>Basic</h3>
+
+                <p>₹500</p>
+
+                <button onclick="selectPlan('Basic')">
+                    Select
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Standard</h3>
+
+                <p>₹1000</p>
+
+                <button onclick="selectPlan('Standard')">
+                    Select
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Premium</h3>
+
+                <p>₹1500</p>
+
+                <button onclick="selectPlan('Premium')">
+                    Select
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h2>Footer Section</h2>
+
+        <p>Simple Responsive Footer</p>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+        function showMessage(){
+            alert("Button Clicked!");
+        }
+
+        function login(){
+
+            var user = document.getElementById("username").value;
+
+            var pass = document.getElementById("password").value;
+
+            if(user == "" || pass == ""){
+                alert("Please enter username and password");
+            }
+            else{
+                alert("Login Successful");
+            }
+        }
+
+        function followUser(){
+            alert("You followed Jiya");
+        }
+
+        function buyProduct(){
+            alert("Product Added to Cart");
+        }
+
+        function glowMessage(){
+            alert("Glow Button Clicked");
+        }
+
+        function selectPlan(plan){
+            alert(plan + " Plan Selected");
+        }
+
+    </script>
+
+</body>
+</html>
