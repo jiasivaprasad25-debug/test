@@ -2,7 +2,7 @@
 <html>
 <head>
 
-    <title>Simple Webpage</title>
+    <title>Web Development Tasks</title>
 
     <style>
 
@@ -100,44 +100,7 @@
 
         .gallery img{
             width: 100%;
-        }
-
-        /* Dark Background */
-
-        .dark{
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .glow{
-            background-color: cyan;
-            color: black;
-            box-shadow: 0px 0px 10px cyan;
-        }
-
-        /* Pricing Cards */
-
-        .pricing{
-            display: flex;
-            gap: 20px;
-        }
-
-        .card{
-            border: 1px solid black;
-            padding: 20px;
-            width: 150px;
-            text-align: center;
-        }
-
-        /* Footer */
-
-        footer{
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding: 15px;
+            height: 200px;
         }
 
     </style>
@@ -146,14 +109,14 @@
 
 <body>
 
-    <!-- Simple Webpage -->
+    <!-- 1. Simple Webpage -->
 
     <section>
 
         <h1>Welcome to My Website</h1>
 
         <p>
-            This is a simple paragraph for the webpage.
+            This is a simple webpage using HTML and CSS.
         </p>
 
         <button onclick="showMessage()">
@@ -163,7 +126,8 @@
     </section>
 
 
-    <!-- Login Form -->
+
+    <!-- 2. Login Form -->
 
     <section>
 
@@ -184,7 +148,8 @@
     </section>
 
 
-    <!-- Navigation Bar -->
+
+    <!-- 3. Navigation Bar -->
 
     <section>
 
@@ -192,18 +157,19 @@
 
         <nav>
 
-            <a href="#home">Home</a>
+            <a href="#">Home</a>
 
-            <a href="#about">About</a>
+            <a href="#">About</a>
 
-            <a href="#contact">Contact</a>
+            <a href="#">Contact</a>
 
         </nav>
 
     </section>
 
 
-    <!-- Profile Card -->
+
+    <!-- 4. Profile Card -->
 
     <section>
 
@@ -211,7 +177,7 @@
 
         <div class="profile">
 
-            <img src="https://via.placeholder.com/100">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300">
 
             <h3>Jiya</h3>
 
@@ -226,7 +192,8 @@
     </section>
 
 
-    <!-- Product Card -->
+
+    <!-- 5. Product Card -->
 
     <section>
 
@@ -234,9 +201,9 @@
 
         <div class="product">
 
-            <img src="https://via.placeholder.com/200x100">
+            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500">
 
-            <h3>Watch</h3>
+            <h3>Smart Watch</h3>
 
             <p>Price: ₹2000</p>
 
@@ -249,7 +216,8 @@
     </section>
 
 
-    <!-- Two Column Layout -->
+
+    <!-- 6. Two Column Layout -->
 
     <section>
 
@@ -278,7 +246,8 @@
     </section>
 
 
-    <!-- Gallery -->
+
+    <!-- 7. Image Gallery -->
 
     <section>
 
@@ -286,92 +255,17 @@
 
         <div class="gallery">
 
-            <img src="https://via.placeholder.com/200">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400">
 
-            <img src="https://via.placeholder.com/200">
+            <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=400">
 
-            <img src="https://via.placeholder.com/200">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=400">
 
-            <img src="https://via.placeholder.com/200">
-
-        </div>
-
-    </section>
-
-
-    <!-- Dark Background -->
-
-    <section class="dark">
-
-        <h2>Dark Theme Section</h2>
-
-        <p>This section has dark background.</p>
-
-        <button class="glow" onclick="glowMessage()">
-            Glow Button
-        </button>
-
-    </section>
-
-
-    <!-- Pricing Cards -->
-
-    <section>
-
-        <h2>Pricing Plans</h2>
-
-        <div class="pricing">
-
-            <div class="card">
-
-                <h3>Basic</h3>
-
-                <p>₹500</p>
-
-                <button onclick="selectPlan('Basic')">
-                    Select
-                </button>
-
-            </div>
-
-            <div class="card">
-
-                <h3>Standard</h3>
-
-                <p>₹1000</p>
-
-                <button onclick="selectPlan('Standard')">
-                    Select
-                </button>
-
-            </div>
-
-            <div class="card">
-
-                <h3>Premium</h3>
-
-                <p>₹1500</p>
-
-                <button onclick="selectPlan('Premium')">
-                    Select
-                </button>
-
-            </div>
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=400">
 
         </div>
 
     </section>
-
-
-    <!-- Footer -->
-
-    <footer>
-
-        <h2>Footer Section</h2>
-
-        <p>Simple Responsive Footer</p>
-
-    </footer>
 
 
 
@@ -403,14 +297,6 @@
 
         function buyProduct(){
             alert("Product Added to Cart");
-        }
-
-        function glowMessage(){
-            alert("Glow Button Clicked");
-        }
-
-        function selectPlan(plan){
-            alert(plan + " Plan Selected");
         }
 
     </script>
